@@ -213,7 +213,7 @@ main {
 }
 .feature-product-description > h2 {
   color: #0a0826;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: 700;
   line-height: 60px; /* 157.895% */
 }
@@ -350,5 +350,23 @@ footer > .contact-items {
   }
   .item {
     padding: 20px;
+  }
+
+  /* ----------feature product section --------- */
+  .feature-product {
+    margin-top: 50px;
+    flex-direction: column-reverse;
+    gap: 30px;
+    text-align: center;
+  }
+  .feature-product-description {
+    align-items: center;
+  }
+  .feature-product-description > h2 {
+    text-align: center;
+
+    font-size: 1.5rem;
+
+    line-height: normal;
   }
 }
