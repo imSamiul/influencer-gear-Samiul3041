@@ -1,0 +1,228 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+:root {
+  --dark-gray: #3a3a3a;
+  --title-gray: #18191f;
+  --price-dark-color: rgba(0, 0, 0, 0.87);
+  --additional-gray: #787885;
+}
+
+nav {
+  display: flex;
+
+  justify-content: space-between;
+  margin-top: 87px;
+}
+.nav-bar {
+  width: 75%;
+  margin: 0 auto;
+}
+nav > h3 {
+  font-size: 24px;
+  color: var(--dark-gray);
+}
+.navbar-right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.nav-items {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+main {
+  width: 75%;
+  margin: 0 auto;
+}
+/* -----------hero section------------- */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  /* padding-left: 120px;
+  padding-right: 120px; */
+  margin-top: 30px;
+  height: 480px;
+}
+
+.hero-left-section {
+  width: 582px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.hero-heading {
+  color: var(--dark-gray);
+  font-family: Poppins;
+  font-size: 52px;
+
+  font-weight: 700;
+  line-height: 70px; /* 134.615% */
+  margin-bottom: 0px;
+}
+.hero-paragraph {
+  color: var(--dark-gray);
+  font-family: Poppins;
+  font-size: 16px;
+
+  font-weight: 600;
+}
+.prebook-btn {
+  border-radius: 41px;
+  background: #e02c6d;
+  width: fit-content;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.right-section {
+  background: url(../images/Circle\ design.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-repeat: no-repeat;
+}
+/* ---------web section------- */
+.web {
+  border: rgba(192, 204, 218, 0.2) 1px solid;
+  margin-top: 69px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* -------Popular Collection Section------- */
+.popular-collection {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.collection-items {
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.collection-items > .item > img {
+  width: 100%;
+}
+.item {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.collection-item-title {
+  color: var(--title-gray);
+
+  font-size: 28px;
+
+  font-weight: 500;
+  line-height: 40px; /* 142.857% */
+  margin: 0;
+}
+.collection-item-price {
+  color: var(--price-dark-color);
+  font-family: Inter;
+  font-size: 24px;
+
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+  margin: 0;
+}
+.collection-item-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.collection-item-rating > p {
+  margin: 0;
+}
+.collection-item-additional {
+  width: 196px;
+  color: var(--additional-gray);
+  font-family: Inter;
+  font-size: 14px;
+
+  font-weight: 700;
+  line-height: 143%; /* 20.02px */
+  letter-spacing: 0.252px;
+}
+.see-more-link {
+  align-self: flex-end;
+  margin-top: 50px;
+  color: rgba(224, 44, 109, 0.87);
+
+  font-size: 16px;
+
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ----------feature product section --------- */
+.feature-product {
+  display: flex;
+  gap: 96px;
+}
+.feature-product-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.feature-product-description > h2 {
+  color: #0a0826;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 60px; /* 157.895% */
+}
+.feature-product-description > p {
+  /* margin-top: 16px; */
+  color: #6c6c6c;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px; /* 175% */
+}
+.join-now-btn {
+  display: flex;
+  gap: 5px;
+  background-color: #e02c6d;
+  width: fit-content;
+  padding: 10px 24px;
+  color: #fff;
+  font-size: 16px;
+
+  font-weight: 700;
+}
+footer {
+  margin-top: 100px;
+  background: #0a0826;
+  text-align: center;
+  color: #fff;
+  padding: 50px 0;
+}
+footer > .contact-items {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 17px;
+}
+@media screen and (max-width: 768px) {
+  .collection-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
