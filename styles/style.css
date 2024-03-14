@@ -235,6 +235,7 @@ main {
 
   font-weight: 700;
 }
+/* ------------ footer section ----------- */
 footer {
   margin-top: 100px;
   background: #0a0826;
@@ -368,5 +369,11 @@ footer > .contact-items {
     font-size: 1.5rem;
 
     line-height: normal;
+  }
+  footer > h2 {
+    font-size: 1rem;
+  }
+  footer > P {
+    font-size: 0.75rem;
   }
 }
