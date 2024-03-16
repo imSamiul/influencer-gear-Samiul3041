@@ -17,7 +17,7 @@ nav {
   margin-top: 87px;
 }
 .hamburger-btn {
-  display: none;
+  display: none !important;
 }
 .shopping-cart-icon {
   display: none;
