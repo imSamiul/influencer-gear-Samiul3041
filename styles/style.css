@@ -20,7 +20,7 @@ nav {
   display: none !important;
 }
 .shopping-cart-icon {
-  display: none;
+  display: none !important;
 }
 .nav-bar {
   width: 75%;
